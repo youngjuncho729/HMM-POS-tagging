@@ -100,7 +100,7 @@ def tag(training_list, test_file, output_file):
     # Tag the words from the untagged input file and write them into the output file.
     # Doesn't do much else beyond that yet.
 
-    traning(training_list)
+    training(training_list)
 
     sentences = read_test_file(test_file)
 
@@ -276,7 +276,7 @@ def read_test_file(test_file):
     return sentences
 
 
-def traning(training_list):
+def training(training_list):
     """Reads the traning file and genreate probabilities."""
     sentence_num = 0
     trans_count = {}
